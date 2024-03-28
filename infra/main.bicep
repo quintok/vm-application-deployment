@@ -7,9 +7,5 @@ resource gallery 'Microsoft.Compute/galleries@2023-07-03' = {
   location: location
   properties: {
     description: 'vm applications gallery'
-    identifier: {}
-    sharingProfile: {
-      permissions: 'Private'
-    }
   }
 }
