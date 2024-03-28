@@ -9,3 +9,12 @@ resource gallery 'Microsoft.Compute/galleries@2023-07-03' = {
     description: 'vm applications gallery'
   }
 }
+
+resource app 'Microsoft.Compute/galleries/applications@2023-07-03' = {
+  name: 'Firefox'
+  location: location
+  parent: gallery
+  properties: {
+    supportedOSType: 'Windows'
+  }
+}
