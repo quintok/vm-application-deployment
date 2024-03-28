@@ -3,7 +3,7 @@ param location string = resourceGroup().location
 
 // create gallery
 resource gallery 'Microsoft.Compute/galleries@2023-07-03' = {
-  name: 'my-application-gallery'
+  name: 'my_application_gallery'
   location: location
   properties: {
     description: 'vm applications gallery'
